@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Supplease</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/bootstrap.css') }}" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href= "{{ url_for('static',filename='styles/style.css') }}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href= "{{ url_for('static',filename='styles/responsive.css') }}" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+          <a class="navbar-brand" href="/">
+            <img src="images/logo.png" alt="" /><span>
+              Supplease
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="fruit.html"> About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/service"> Services </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="slider_item-box">
+              <div class="slider_item-container">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="slider_item-detail">
+                        <div>
+                          <h1>
+                            Supplease
+                          </h1>
+                          <p>
+                            Leveraging Blockchain and Machine Learning For Shortened Supply Chain.
+                          </p>
+                          <div class="d-flex">
+                            <a href="" class="text-uppercase custom_orange-btn mr-3">
+                              Explore 
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="slider_img-box">
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+      
+      </div>
+    </section>
+
+    <!-- end slider section -->
+  </div>
+
+  <!-- service section -->
+
+  <section class="service_section layout_padding ">
+    <div class="container">
+      <h2 class="custom_heading">Our Services</h2>
+      <div class=" layout_padding2">
+        <div class="card-deck">
+          <div class="card">
+            <div onclick="location.href='/forecast';" style="cursor:pointer;" class="card-body">
+              <h5 class="card-title">Demand Forecasting</h5>
+              <p class="card-text">
+                Forecast the future of sales based on recent demand trends.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div onclick="location.href='/tracking';" style="cursor:pointer;" class="card-body">
+              <h5 class="card-title">Product Tracking</h5>
+              <p class="card-text">
+                Transparently track your products from industry to customers.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Resource Planning</h5>
+              <p class="card-text">
+                Plan and use resources efficiently assisted by Machine predictions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <a href="" class="custom_dark-btn">
+          Read More
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- end service section -->
+
+  
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+      Copyright &copy; 
+    </p>
+  </section>
+  <!-- footer section -->
+
+  <script src="{{url_for('static', filename='jquery-3.4.1.min.js')}}"></script>
+  <script src="{{url_for('static', filename='bootstrap.js')}}"></script>
+
+
+</body>
+
+</html>
